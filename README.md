@@ -1,4 +1,4 @@
-# Verah’s Profile Card 👩‍💻
+# Profile Card 👩‍💻
 
 A simple **profile card web app** built with **HTML, CSS, and Boxicons**.  
 It showcases my personal links, CV, and contact details in a clean, responsive layout.  
