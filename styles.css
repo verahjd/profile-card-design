@@ -1,19 +1,24 @@
 /* Google Font - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+/* "*" universal selector selects all elements */
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /*The box will never grow bigger than the width you set.*/
     font-family: "Poppins", sans-serif;
 }
 
 body{
-    height: 100vh;
-    display: flex;
+    height: 100vh; /* 100% of the viewport height = the visible area of a web page on a user’s screen */
+    display: flex; 
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    /* "display: flex" Now, all of its children (flex items) will follow flexbox rules.
+    Without this line → the container behaves like a normal block element.
+    With it → you unlock all the justify-content, align-items, and other flexbox features. */
+
+    min-height: 100vh; /* Ensures the body takes at least the full height of the viewport */
     background: #121212;
 }
 
@@ -21,8 +26,8 @@ body{
     display: flex;
     flex-direction: column;
     text-align: center;
-    max-width: 370px;
-    width: 100%;
+    max-width: 370px; /* The maximum width of the element will be 370px, even if parent container is larger. */
+    width: 100%; /* Take up 100% of the available width of your parent container. */
     background: #191919;
     border-radius: 24px;
     padding: 25px;
